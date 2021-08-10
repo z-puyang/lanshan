@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countDown</title>
+    <style>
+        #show {
+            text-align: center;
+            height: 200px;
+            line-height: 200px;
+            background-color: #5965db;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="show">
+        距离2021年9月5日0点0分还有：
+        <span></span>天
+        <span></span>小时
+        <span></span>分
+        <span></span>秒
+    </h1>
+
+    <script>
+        var show = document.getElementById("show").getElementsByTagName("span");
+
+        setInterval(function() {
+            var timeing = new Date();
+            var time = new Date(2021, 8, 13, 0, 0);
+            var num = time.getTime() - timeing.getTime();
+            var day = parseInt(num / (24 * 60 * 60 * 1000) - 30);
+            num = num % (24 * 60 * 60 * 1000);
+            var hour = parseInt(num / (60 * 60 * 1000));
+            num = num % (60 * 60 * 1000);
+            var minute = parseInt(num / (60 * 1000));
+            num = num % (60 * 1000);
+            var second = parseInt(num / 1000);
+            show[0].innerHTML = day;
+            show[1].innerHTML = hour;
+            show[2].innerHTML = minute;
+            show[3].innerHTML = second;
+            if (day == 10) {
+                alert("离开学只有10天了！你暑假要做的事做完了吗？")
+            }
+            if (day == 3) {
+                alert("还有3天就开学了！该准备去学校的东西了！")
+            }
+        }, 100)
+    </script>
+</body>
+
+</html>

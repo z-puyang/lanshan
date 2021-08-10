@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*------------Flout----------------*/
+        /*
+        #one {
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            float: left;
+        }
+        
+        #two {
+            width: 200px;
+            float: right;
+            height: 50px;
+            background-color: blue;
+        }
+        
+        #three {
+            width: calc(100% - 400px);
+            margin: 0px 200px;
+            height: 50px;
+            background-color: rebeccapurple;
+        }
+        */
+        /*------------Position----------------*/
+        /*
+        #one {
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+        }
+        
+        #two {
+            height: 50px;
+            width: 200px;
+            background-color: blue;
+            position: absolute;
+            right: 0;
+        }
+        
+        #three {
+            width: calc(100% - 383px);
+            height: 50px;
+            background-color: rebeccapurple;
+            position: static;
+            margin-left: 192px;
+        }
+        */
+        /*------------Flexbox----------------*/
+        
+        #father {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #one {
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            float: right;
+            display: flex;
+            flex-flow: row;
+        }
+        
+        #three {
+            width: 200px;
+            height: 50px;
+            background-color: blue;
+            display: flex;
+        }
+        
+        #two {
+            width: calc(100% - 400px);
+            height: 50px;
+            background-color: rebeccapurple;
+            display: flex;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="father">
+        <div id="one">one</div>
+        <div id="two">two</div>
+        <div id="three">three</div>
+
+    </div>
+</body>
+
+</html>

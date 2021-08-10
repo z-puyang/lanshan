@@ -1,0 +1,191 @@
+/*-----------左侧-------------*/
+
+.darkPart {
+    background-color: #1e2933;
+    height: 100vh;
+    min-width: 160px;
+    width: 20%;
+    color: #ffffff;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    left: 0;
+}
+
+.logo {
+    font-size: 15px;
+    text-align: center;
+    height: 65px;
+    line-height: 65px;
+}
+
+.face {
+    border-top: 1px solid #85919e;
+    border-bottom: 1px solid #85919e;
+    padding: 2vh 2vw 2vh 0;
+}
+
+.face .shili {
+    float: right;
+    padding-right: 50%;
+    padding-top: 5px;
+}
+
+.face .shili1 {
+    font-size: 15px;
+}
+
+.face .shili2 {
+    font-size: 10px;
+}
+
+.face img {
+    height: 35px;
+    width: 35px;
+}
+
+.groupFirst {
+    height: 60px;
+    line-height: 60px;
+    color: #9ba4b0;
+}
+
+.list1 img,
+.help1 img,
+.set1 img {
+    border: 10px;
+}
+
+.list1,
+.chat,
+.char .information,
+.help1,
+.set1 {
+    height: 40px;
+    line-height: 40px;
+    border: 10px;
+}
+
+.chat {
+    background-color: #5965db;
+    height: 39px;
+    border-radius: 0.5em;
+}
+
+.chat .information {
+    float: right;
+    background-color: #ffffff;
+    border-radius: 2em;
+    color: #5965db;
+    height: 23px;
+    line-height: 23px;
+    width: 23px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.body {
+    width: 77.5%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+    border: solid 1px #e3e6ee;
+}
+
+
+/*--------------抬头----------------*/
+
+.head {
+    width: 80vw;
+    margin-right: 0;
+    height: 65px;
+    line-height: 65px;
+    border: solid 1px #e3e6ee;
+    padding-left: 3%;
+}
+
+.search {
+    position: absolute;
+    left: 0;
+    width: 80%;
+    border: solid 1px #e3e6ee;
+    padding-left: 20px;
+    border-radius: 0.5em;
+}
+
+.head input {
+    width: 95%;
+    padding: 7px 0px;
+    outline-style: none;
+}
+
+.language {
+    border: solid 1px #e3e6ee;
+    border-radius: 0.5em;
+    width: 15%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+
+/*-----------用户列表---------------*/
+
+.user {
+    width: 340px;
+}
+
+.user .userList {
+    font-size: 15px;
+    border: solid 1px #e3e6ee;
+}
+
+.user .new {
+    background-color: #ebedfb;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 10px;
+    color: #5965db;
+}
+
+.user .pic {
+    position: absolute;
+    left: 0;
+}
+
+.user .test {
+    position: absolute;
+    left: 80px;
+}
+
+.content {
+    width: 200px;
+}
+
+
+/*-------------聊天--------------*/
+
+.talk {
+    min-width: 400px;
+}
+
+.chatbox {
+    background-color: #f8fafd;
+    width: auto;
+}
+
+.left1,
+.left2,
+.left3,
+.left4 {
+    background-color: #5965db;
+}
+
+.right1,
+.right2,
+.right3 {
+    background-color: #eaeff4;
+}
