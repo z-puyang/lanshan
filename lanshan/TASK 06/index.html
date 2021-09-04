@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="iconfont.css">
+    <title>天气</title>
+
+</head>
+
+<body>
+    <!-- 上方大字 -->
+    <div id="weather">
+
+        <div id="header">
+            <a hidefocus="true" href=" ">
+                <img src="./images/2.png"></a>
+            <p id="city" class="info"><img src="./images/location.png">城市</p>
+            <a hidefocus="true" href=" ">
+                <img src="./images/1.png"></a>
+        </div>
+
+        <div id="air_quality">
+            <p id="aqi">湿度</p>
+            <p id="qlty">空气状况</p>
+        </div>
+
+        <div id="center">
+            <div id="temperature" class="info">19°</div>
+            <div id="wea" class="info">多云</div>
+            <div id="addition" class="info">南风
+                <div class="info">2级</div>
+            </div>
+            <div id="sentence">光芒透过云缝撒向大地~</div>
+        </div>
+
+    </div>
+
+    <!-- 两天天气 -->
+    <section id="twodays">
+        <div id="today">
+            <div class="top">
+                <p class="date">今天</p>
+                <p class="temp">25/19°</p>
+            </div>
+            <div class="bottom">
+                <p class="weath">多云转阴</p>
+                <img src="./images/day/yun.png">
+            </div>
+        </div>
+        <div id="tommorrow">
+            <div class="top">
+                <p class="date">明天</p>
+                <p class="temp">27/20°</p>
+            </div>
+            <div class="bottom">
+                <p class="weath">多云</p>
+                <img src="./images/day/yun.png">
+            </div>
+        </div>
+    </section>
+    <!-- 24小时的天气 -->
+    <section id="hours">
+        <div class="scroll">
+            <ol id="hour_list">
+                <li class="item">
+                    <p class="time">00:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">01:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">02:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">03:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">04:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">05:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">06:00</p>
+                    <div class="pic">
+                        <img src="./images/rise.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">07:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">08:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">09:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">10:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">11:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">12:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">13:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">14:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">15:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">16:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">17:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">18:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">19:00</p>
+                    <div class="pic">
+                        <img src="./images/set.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">20:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">21:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">22:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">23:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">24:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+                <li class="item">
+                    <p class="time">12:00</p>
+                    <div class="pic">
+                        <img src="./images/day/yun.png">
+                    </div>
+                    <p class="tempt">20°</p>
+                </li>
+
+            </ol>
+        </div>
+    </section>
+
+    <!-- 一周的天气 -->
+    <section id="week">
+        <div class="scroll">
+            <ol id="week_list">
+                <li class="item">
+                    <p class="day">昨天</p>
+                    <p class="date">-/-</p>
+                    <div class="daytime">
+                        <p class="weat">阴</p>
+                        <img src="./images/day/yin.png">
+                    </div>
+                    <div class="night">
+                        <img src="./images/day/yin.png">
+                        <p class="weat">阴</p>
+
+                    </div>
+                    <div class="wind">
+                        <p class="w">东南风</p>
+                        <p class="wi">3级</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <p class="day">今天</p>
+                    <p class="date">-/-</p>
+                    <div class="daytime">
+                        <p class="weat">小雨</p>
+                        <img src="./images/day/yu.png">
+                    </div>
+                    <div class="night">
+                        <img src="./images/day/yu.png">
+                        <p class="weat">小雨</p>
+
+                    </div>
+                    <div class="wind">
+                        <p class="w">西南风</p>
+                        <p class="wi">3级</p>
+                    </div>
+                </li>
+                <li class="item" class="future_box">
+                    <p class="day" class="future_info">明天</p>
+                    <p class="date" class="future_info">-/-</p>
+                    <div class="daytime">
+                        <p class="weat" class="future_info">多云</p>
+                        <img src="./images/day/yun.png">
+                        <p class="tem" class="future_info">20</p>
+                    </div>
+                    <div class="night">
+                        <img src="./images/day/yun.png">
+                        <p class="weat">多云</p>
+
+                    </div>
+                    <div class="wind">
+                        <p class="w" class="future_info">东北风</p>
+                        <p class="wi" class="future_info">3级</p>
+                    </div>
+                </li>
+                <li class="item" class="future_box">
+                    <p class="day" class="future_info">后天</p>
+                    <p class="date" class="future_info">-/-</p>
+                    <div class="daytime">
+                        <p class="weat" class="future_info">多云</p>
+                        <img src="./images/day/yun.png">
+                        <p class="tem" class="future_info">20</p>
+                    </div>
+                    <div class="night">
+                        <img src="./images/day/yun.png">
+                        <p class="weat">多云</p>
+
+                    </div>
+                    <div class="wind">
+                        <p class="w" class="future_info">东风</p>
+                        <p class="wi" class="future_info">3级</p>
+                    </div>
+                </li>
+                <li class="item" class="future_box">
+                    <p class="day" class="future_info">周二</p>
+                    <p class="date" class="future_info">-/-</p>
+                    <div class="daytime">
+                        <p class="weat" class="future_info">晴</p>
+                        <img src="./images/day/qing.png">
+                        <p class="tem" class="future_info">20</p>
+                    </div>
+                    <div class="night">
+                        <img src="./images/day/qing.png">
+                        <p class="weat">晴</p>
+
+                    </div>
+                    <div class="wind">
+                        <p class="w" class="future_info">东风</p>
+                        <p class="wi" class="future_info">3级</p>
+                    </div>
+                </li>
+                <li class="item" class="future_box">
+                    <p class="day" class="future_info">周三</p>
+                    <p class="date" class="future_info">-/-</p>
+                    <div class="daytime">
+                        <p class="weat" class="future_info">小雨</p>
+                        <img src="./images/day/yu.png">
+                        <p class="tem" class="future_info">20</p>
+                    </div>
+                    <div class="night">
+                        <img src="./images/day/yu.png">
+                        <p class="weat">小雨</p>
+
+                    </div>
+                    <div class="wind">
+                        <p class="w" class="future_info">西南风</p>
+                        <p class="wi" class="future_info">3级</p>
+                    </div>
+                </li>
+                <li class="item" class="future_box">
+                    <p class="day" class="future_info">周四</p>
+                    <p class="date" class="future_info">-/-</p>
+                    <div class="daytime">
+                        <p class="weat" class="future_info">小雨</p>
+                        <img src="./images/day/yu.png">
+                        <p class="tem" class="future_info">20</p>
+                    </div>
+                    <div class="night">
+                        <img src="./images/day/yu.png">
+                        <p class="weat">小雨</p>
+
+                    </div>
+                    <div class="wind">
+                        <p class="w" class="future_info">西北风</p>
+                        <p class="wi" class="future_info">3级</p>
+                    </div>
+                </li>
+                <li class="item" class="future_box">
+                    <p class="day" class="future_info">周五</p>
+                    <p class="date" class="future_info">-/-</p>
+                    <div class="daytime">
+                        <p class="weat" class="future_info">阴</p>
+                        <img src="./images/day/yin.png">
+                        <p class="tem" class="future_info">20</p>
+                    </div>
+                    <div class="night">
+                        <img src="./images/day/yun.png">
+                        <p class="weat">多云</p>
+
+                    </div>
+                    <div class="wind">
+                        <p class="w" class="future_info">南风</p>
+                        <p class="wi" class="future_info">3级</p>
+                    </div>
+                </li>
+                <li class="item"></li>
+            </ol>
+            <div class="chart">
+
+                <canvas id="myChart" width="900" height="260"></canvas>
+            </div>
+        </div>
+    </section>
+    <!-- 生活指数 -->
+    <section id="index_of_living">
+        <div class="scroll">
+
+            <li class="item">
+                <span class="chuanyi"><img src="./images/cloth.png"></span>
+                <p class="content">舒适</p>
+                <p class="title">穿衣</p>
+            </li>
+            <li class="item">
+                <span class="umbrella"><img src="./images/umbrella.png"></span>
+                <p class="content">不带伞</p>
+                <p class="title">雨伞</p>
+            </li>
+            <li class="item">
+                <span class="pill"><img src="./images/pill.png"></span>
+                <p class="content">少发</p>
+                <p class="title">感冒</p>
+            </li>
+            <li class="item">
+                <span class="washcar"><img src="./images/washcar.png"></span>
+                <p class="content">适宜</p>
+                <p class="title">洗车</p>
+            </li>
+            <li class="item">
+                <span class="sports"><img src="./images/sports.png"></span>
+                <p class="content">适宜</p>
+                <p class="title">运动</p>
+            </li>
+            <li class="item">
+                <span class="sun"><img src="./images/sun.png"></span>
+                <p class="content">弱</p>
+                <p class="title">防晒</p>
+            </li>
+            <li class="item">
+                <span class="fish"><img src="./images/fish.png"></span>
+                <p class="content">较适宜</p>
+                <p class="title">钓鱼</p>
+            </li>
+            <li class="item">
+                <span class="trunk"><img src="./images/lvyou.png"></span>
+                <p class="content">适宜</p>
+                <p class="title">旅游</p>
+            </li>
+            <li class="item">
+                <span class="traffic"><img src="./images/bus.png"></span>
+                <p class="content">良好</p>
+                <p class="title">交通</p>
+            </li>
+            <li class="item">
+                <span class="air"><img src="./images/air.png"></span>
+                <p class="content">中</p>
+                <p class="title">空气污染扩散条件</p>
+            </li>
+            <li class="item">
+                <span class="smile"><img src="./images/smile.png"></span>
+                <p class="content">舒适</p>
+                <p class="title">舒适度</p>
+            </li>
+            <li class="item">
+                <span class="hanger"><img src="./images/liangshai.png"></span>
+                <p class="content">适宜</p>
+                <p class="title">晾晒</p>
+            </li>
+            <li class="item">
+                <span class="lipstick"><img src="./images/kouhong.png"></span>
+                <p class="content">去油</p>
+                <p class="title">化妆</p>
+            </li>
+            <li class="item">
+                <span class="chenlian"><img src="./images/chenlian.png"></span>
+                <p class="content">适宜</p>
+                <p class="title">晨练</p>
+            </li>
+            <li class="item">
+                <span class="nose"><img src="./images/cold.png"></span>
+                <p class="content">不易发</p>
+                <p class="title">过敏</p>
+            </li>
+            <li class="item">
+                <span class="zhongshu"><img src="./images/icon_05.png"></span>
+                <p class="content">无中暑风险</p>
+                <p class="title">中暑</p>
+            </li>
+
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="index.js"></script>
+    <script src="hotcss.js"></script>
+
+</body>
+
+</html>
